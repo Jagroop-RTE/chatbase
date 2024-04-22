@@ -1,0 +1,87 @@
+/* Resetting default CSS in the body */
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+ /* Container Max width  */
+.container{
+    max-width: 1385px !important;
+}
+
+/* Defining font styles for Patrick Hand Regular */
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar styles with transition effect */
+.navbar {
+    transition:  border 0.5s ease, background-color 0.5s ease; 
+    border-bottom: 1px solid white;
+    background-color: #fff;
+  }
+  
+  .navbar-scrolled {
+    border-bottom:1 px solid #ccc;
+}
+
+.navbar-styles{
+    height: 4rem;
+}
+
+/* Additional styles  */
+.background-black{
+    background-color:#222323 !important;
+}
+
+.color-pink{
+    color: #fd309b;
+    font-weight:800;
+}
+.try-for-free-btn {
+    height: 2rem;
+    font-weight: 700 !important;
+}
+.custom-gpt-txt-style {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.mt-7{
+    margin-top: 7rem;
+}
+
+.pb-7{
+    padding-bottom: 2.5rem;
+}
+
+/* Build your chatbot button style */
+#chatbot-btn-style {
+    background: linear-gradient(to right, #424a63, #e05e4b, #edd36c) !important;
+    padding: 10px;
+    border-radius: 11px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    max-width: 16rem;
+}
+
+/* Watch now button style  */
+.watch-now-style{
+    padding: 11px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 916px) {
+    span.col-md.text-center.btn-label-text-style{
+        color: #71717a;
+        text-align: left !important;
+        margin-left: 2rem;
+     }
+}
