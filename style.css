@@ -66,21 +66,27 @@ body{
 }
 
 /* Build your chatbot button style */
-#chatbot-btn-style {
+.gredient-btn{
     background: linear-gradient(to right, #424a63, #e05e4b, #edd36c) !important;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.gredient-btn:hover{
+    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
+    opacity: 1;
+    transition: 0.3s;    
+}
+.h-color-red{
+    color: #E25D4C!important;
+}
+#chatbot-btn-style {    
     padding: 10px;
     border-radius: 11px;
     color: white;
     font-size: 17px;
     font-weight: 700;
     max-width: 16rem;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-#chatbot-btn-style:hover {
-    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
-    opacity: 1;
-    transition: 0.3s;
+    
 }
 /* Watch now button style  */
 .watch-now-style{
