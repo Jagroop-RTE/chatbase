@@ -24,17 +24,43 @@ $(document).ready(function() {
 });
 });
 
-$(document).ready(function() {
-    // Hide the icon by default
-    $('.icon-hidden').css('display', 'none');
+$(window).scroll(function() {
+  
+    // selectors
+    var $window = $(window),
+        $body = $('body'),
+        $panel = $('.change-bg');
+    
+    // Change 33% earlier than scroll position so colour is there when you arrive.
+    var scroll = $window.scrollTop() + ($window.height()/1.1);
+  
+    $panel.each(function () {
+      var $this = $(this);
 
-    // Set up hover event listeners
-    $('.custom-div').hover(
-        function() {
-            $(this).find('.icon-hidden').css('display', 'inline-block');
-        },
-        function() {
-            $(this).find('.icon-hidden').css('display', 'none');
-        }
-    );
-});
+      // if position is within range of this panel.
+      // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+      // Remember we set the scroll to 33% earlier in scroll var.
+      if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            
+        // Remove all classes on body with color-
+        $body.removeClass(function (index, css) {
+          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        
+        // Add class of currently active div
+        $body.addClass('bg-color-black');
+      }else{
+        $body.removeClass('bg-color-black');
+      }
+    });    
+    
+  }).scroll();
+
+  $(function(){
+    $("body").on("click",".accordion .btn-link",function(){
+      let imgNo = $(this).attr("data-img");
+      console.log("imgNo",imgNo)
+      $(".hiw-img").addClass("inactive");
+      $(".hiw-img-"+imgNo).removeClass("inactive");
+    })
+  })
