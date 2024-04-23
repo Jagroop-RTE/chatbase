@@ -120,8 +120,8 @@ body{
     margin-right: 19px;
 }
 
-.p-8{
-    padding: 8px;
+.pad-2{
+    padding: 2px;
 }
 
 .twitter-card-style{
@@ -286,5 +286,14 @@ body{
         background-image: url("assets/images/HowItWorks.png");
         background-position: right;
         background-repeat: no-repeat;
+        
     }
   }
+
+.indented {
+    padding-left: 20px;
+  }
+
+.icon-hidden {
+    display: none;
+}
