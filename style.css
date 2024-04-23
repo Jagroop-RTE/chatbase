@@ -124,10 +124,14 @@ body{
     padding: 2px;
 }
 
-.twitter-card-style{
+.card.twitter-card-style {
+    background: #18181b;
+    color: white;
+    opacity: 0.9;
     padding: 10px 12px;
     border-radius: 12px !important;
 }
+
 
 .free-section-style{
     min-height: 15rem; 
