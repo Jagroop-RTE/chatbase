@@ -74,8 +74,14 @@ body{
     font-size: 17px;
     font-weight: 700;
     max-width: 16rem;
+    opacity: 0.8;
+    transition: 0.3s;
 }
-
+#chatbot-btn-style:hover {
+    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
+    opacity: 1;
+    transition: 0.3s;
+}
 /* Watch now button style  */
 .watch-now-style{
     padding: 11px 14px;
