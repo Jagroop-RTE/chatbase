@@ -344,41 +344,41 @@
 
   <!-- (Rimal work start) -->
   <!-- Usecases section start's here  -->
-  <section>
+  <section class="change-bg">
     <div class="mt-5 container">
       <div class="d-flex flex-column align-items-start p-0 mb-3">
         <span class="color-pink">USECASES</span>
         <span class="title-txt-style mt-1 text-left font-weight-bold h5 text-light">Here are some of the ways you can use Chatbase.</span>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-12 mb-4 text-white">
-          <div class="col-12 rounded px-4 pt-3 h-100 usecases-div">
-            <h4 class="mt-1 text-left font-weight-bold">Customer Support</h4>
-            <p class="title-txt-style mt-1 text-left font-weight-light mb-4">Experience swift query resolutions, available 24/7, with
-              personalized assistance tailored to your customers' needs.</p>
-              <img alt="Customer Support" class="img-fluid" src="assets/images/usecases1.webp">
+          <div class="col-lg-6 col-12 mb-5 text-white pr-lg-4">
+            <div class="col-12 px-4 pt-3 h-100 usecases-div">
+              <h4 class="mt-1 text-left font-weight-bold usecases-title">Customer Support</h4>
+              <p class="mt-1 text-left mb-4 usecases-subtitle">Experience swift query resolutions, available 24/7, with
+                personalized assistance tailored to your customers' needs.</p>
+                <img alt="Customer Support" class="img-fluid" src="assets/images/usecases1.webp">
+            </div>
           </div>
-          </div>
-          <div class="col-lg-6 col-12 mb-4 text-white">
-            <div class="col-12 rounded px-4 pt-3 h-100 usecases-div">
-            <h4 class="mt-1 text-left font-weight-bold">Lead Generation</h4>
-            <p class="title-txt-style mt-1 text-left font-weight-light mb-4">Set your chatbot to collect leads and qualify them, all while
+          <div class="col-lg-6 col-12 mb-5 text-white pl-lg-4">
+            <div class="col-12 px-4 pt-3 h-100 usecases-div">
+            <h4 class="mt-1 text-left font-weight-bold usecases-title">Lead Generation</h4>
+            <p class="mt-1 text-left mb-4 usecases-subtitle">Set your chatbot to collect leads and qualify them, all while
               providing a personalized experience to your customers.</p>
               <img alt="Lead Generation" class="img-fluid" src="assets/images/usecases2.webp">
           </div>
           </div>
-          <div class="col-lg-6 col-12 mb-4 text-white">
-            <div class="col-12 rounded px-4 pt-3 h-100 usecases-div">
-            <h4 class="mt-1 text-left font-weight-bold">AI Personas to Engage Your Users</h4>
-            <p class="title-txt-style mt-1 text-left font-weight-light mb-4">Create AI personas about any topic and have them engage with your
+          <div class="col-lg-6 col-12 mb-5 text-white pr-lg-4">
+            <div class="col-12 px-4 pt-3 h-100 usecases-div">
+            <h4 class="mt-1 text-left font-weight-bold usecases-title">AI Personas to Engage Your Users</h4>
+            <p class="mt-1 text-left mb-4 usecases-subtitle">Create AI personas about any topic and have them engage with your
               users and provide them with a personalized experience.</p>
               <img alt="AI Personas to Engage Your Users" class="img-fluid" src="assets/images/usecases3.webp">
             </div>
           </div>
-          <div class="col-lg-6 col-12 mb-4 text-white">
-            <div class="col-12 rounded px-4 pt-3 h-100 usecases-div">
-            <h4 class="mt-1 text-left font-weight-bold">Multi-platform Chatbots</h4>
-            <p class="title-txt-style mt-1 text-left font-weight-light mb-4">Add AI chatbots to your website, mobile app, or any other platform
+          <div class="col-lg-6 col-12 mb-5 text-white pl-lg-4">
+            <div class="col-12 px-4 pt-3 h-100 usecases-div">
+            <h4 class="mt-1 text-left font-weight-bold usecases-title">Multi-platform Chatbots</h4>
+            <p class="mt-1 text-left mb-4 ">Add AI chatbots to your website, mobile app, or any other platform
               with a simple embed code or with our API.</p>
               <img alt="Multi-platform Chatbots" class="img-fluid" src="assets/images/usecases4.webp">
             </div>
@@ -400,7 +400,7 @@
           $panel = $('.change-bg');
       
       // Change 33% earlier than scroll position so colour is there when you arrive.
-      var scroll = $window.scrollTop() + ($window.height() / 3);
+      var scroll = $window.scrollTop() + ($window.height()/1.1);
     
       $panel.each(function () {
         var $this = $(this);
