@@ -201,6 +201,7 @@ body{
     padding: 10px 25px;
     font-weight: 500;
     transition-duration: .15s;
+    color: #FFF;
 }
 .contact-btn:hover{
     background-color: #CECED1;
