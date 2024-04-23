@@ -34,6 +34,9 @@ body{
 .navbar-styles{
     height: 4rem;
 }
+.nav-item{
+    margin-right: 25px;
+}
 
 /* Additional styles  */
 .background-black{
@@ -89,6 +92,10 @@ body{
     
 }
 /* Watch now button style  */
+.custom-block-1{
+    z-index: -1;
+}
+
 .watch-now-style{
     padding: 11px 14px;
     font-size: 18px;
@@ -292,11 +299,18 @@ body{
         background-repeat: no-repeat;
         
     }
+    .try-for-free-btn{
+        margin-left: 16px !important;
+    }
 }
 @media (max-width: 768px){
     .custom-gpt-txt-style{
         font-size:4rem;
     }
+    .navbar-nav{
+        padding: 20px 8px;
+    }
+   
 }
 
 /*Accordion CSS start*/
