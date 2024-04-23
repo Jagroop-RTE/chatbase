@@ -66,16 +66,28 @@ body{
 }
 
 /* Build your chatbot button style */
-#chatbot-btn-style {
+.gredient-btn{
     background: linear-gradient(to right, #424a63, #e05e4b, #edd36c) !important;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.gredient-btn:hover{
+    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
+    opacity: 1;
+    transition: 0.3s;    
+}
+.h-color-red{
+    color: #E25D4C!important;
+}
+#chatbot-btn-style {    
     padding: 10px;
     border-radius: 11px;
     color: white;
     font-size: 17px;
     font-weight: 700;
     max-width: 16rem;
+    
 }
-
 /* Watch now button style  */
 .watch-now-style{
     padding: 11px 14px;
@@ -141,6 +153,7 @@ body{
 }
 .img-section{
     margin:.25rem 0;
+    color: #E05D4B;
 }
 .title-section{
     font-weight: 500;
@@ -188,6 +201,7 @@ body{
     padding: 10px 25px;
     font-weight: 500;
     transition-duration: .15s;
+    color: #FFF;
 }
 .contact-btn:hover{
     background-color: #CECED1;
