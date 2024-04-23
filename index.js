@@ -40,3 +40,12 @@ $(window).scroll(function() {
     });    
     
   }).scroll();
+
+  $(function(){
+    $("body").on("click",".accordion .btn-link",function(){
+      let imgNo = $(this).attr("data-img");
+      console.log("imgNo",imgNo)
+      $(".hiw-img").addClass("inactive");
+      $(".hiw-img-"+imgNo).removeClass("inactive");
+    })
+  })

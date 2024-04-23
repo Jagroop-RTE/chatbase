@@ -50,7 +50,7 @@ body{
     font-weight: 700 !important;
 }
 .custom-gpt-txt-style {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 800;
     line-height: 1;
 }
@@ -283,8 +283,43 @@ body{
 }*/
 @media screen and (min-width: 1600px) {
     .hiw-section{
-        background-image: url("assets/images/HowItWorks.png");
+        background-image: url("assets/images/HowItWorksBlack.png");
         background-position: right;
         background-repeat: no-repeat;
     }
-  }
+}
+@media (max-width: 768px){
+    .custom-gpt-txt-style{
+        font-size:4rem;
+    }
+}
+
+/*Accordion CSS start*/
+.accordion{
+    width: 100%;
+}
+.accordion .card-header{
+    background-color: transparent;
+    border:0 none;
+}
+.accordion .card{
+    border:0 none;
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+.btn.collapsed .material-symbols-outlined{
+    display: none;
+}
+.accordion button,
+.accordion button:hover,
+.accordion button:active{
+    color: rgb(0 0 0/1);
+    text-decoration: none !important;
+    padding: 0;
+}
+.hiw-img{
+    margin-left: 100px;
+}
+.hiw-img.inactive{
+    display: none;
+}
+/*Accordion CSS end*/
