@@ -5,7 +5,7 @@ body{
     height: 100%;
     width: 100%;
     transition: background-color 0.5s ease;
-    
+
 }
 
  /* Container Max width  */
@@ -274,3 +274,13 @@ body{
         background-repeat: no-repeat;
     }
   }
+.dropdown-menu.show {
+    display: contents !important;
+    transition: ease !important;
+}
+.dropdown-item{
+    color: #9898a0 !important;
+}
+.dropdown-toggle{
+    background-color: #000 !important;
+}
