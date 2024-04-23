@@ -260,3 +260,17 @@ body{
 }
 
 /*(Rimal work end)*/
+/*.hiw-right-outer{
+    position: relative;
+}
+.hiw-right-outer img{
+    position: absolute;
+    right:-220px;
+}*/
+@media screen and (min-width: 1600px) {
+    .hiw-section{
+        background-image: url("assets/images/HowItWorks.png");
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+  }
