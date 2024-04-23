@@ -1,0 +1,148 @@
+/* Resetting default CSS in the body */
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+ /* Container Max width  */
+.container{
+    max-width: 1385px !important;
+}
+
+/* Defining font styles for Patrick Hand Regular */
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar styles with transition effect */
+.navbar {
+    transition:  border 0.5s ease, background-color 0.5s ease; 
+    border-bottom: 1px solid white;
+    background-color: #fff;
+  }
+  
+  .navbar-scrolled {
+    border-bottom:1 px solid #ccc;
+}
+
+.navbar-styles{
+    height: 4rem;
+}
+
+/* Additional styles  */
+.background-black{
+    background-color:#222323 !important;
+}
+
+.color-pink{
+    color: #fd309b;
+    font-weight:800;
+    font-size: 14px;
+}
+.try-for-free-btn {
+    height: 2rem;
+    font-weight: 700 !important;
+}
+.custom-gpt-txt-style {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.mt-7{
+    margin-top: 7rem;
+}
+
+.pb-7{
+    padding-bottom: 2.5rem;
+}
+
+/* Build your chatbot button style */
+#chatbot-btn-style {
+    background: linear-gradient(to right, #424a63, #e05e4b, #edd36c) !important;
+    padding: 10px;
+    border-radius: 11px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    max-width: 16rem;
+}
+
+/* Watch now button style  */
+.watch-now-style{
+    padding: 11px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 916px) {
+    span.col-md.text-center.btn-label-text-style{
+        color: #71717a;
+        text-align: left !important;
+        margin-left: 2rem;
+     }
+}
+
+.title-txt-style{
+    font-size:1.125rem;
+    line-height:1.5
+}
+
+/*(Rimal work start)*/
+.powerful-features-div{
+    background-color: #e4e4e7;
+}
+
+.usecases-div{
+    background: radial-gradient(89.72% 84.75% at 49.92% 48.04%, rgba(69, 30, 137, 0.25) 0%, rgba(0, 0, 0, 0.00) 100%);
+    border: 1px solid #292524 !important;
+}
+/*(Rimal work start)*/
+
+/*(Karan work start)*/
+.bg-color-black{
+    background-color: #000;
+}
+.bg-with-gradient{
+    background-image: radial-gradient(50% 50% at 50% 50%,#000 10%,#000 20%,rgba(124,58,237,0) 100%);
+    min-height: .15rem;
+    margin:4rem auto;
+}
+.mds-block{
+    margin-bottom: 80px;
+}
+.img-section{
+    margin:.25rem 0;
+}
+.title-section{
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-top: .25rem;
+    font-family: Inter var,ui-sans-serif,system-ui;
+}
+.description-section{
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.video-section{
+    position:relative;
+    margin-top: 120px;
+}
+.video-section .video-svg-outer{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    cursor: pointer;
+}
+/*(Karan work end)*/
