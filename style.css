@@ -1,0 +1,345 @@
+/* Resetting default CSS in the body */
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    
+}
+
+ /* Container Max width  */
+.container{
+    max-width: 1385px !important;
+}
+
+/* Defining font styles for Patrick Hand Regular */
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar styles with transition effect */
+.navbar {
+    transition:  border 0.5s ease, background-color 0.5s ease; 
+    border-bottom: 1px solid white;
+    background-color: #fff;
+  }
+  
+  .navbar-scrolled {
+    border-bottom:1 px solid #ccc;
+}
+
+.navbar-styles{
+    height: 4rem;
+}
+.nav-item{
+    margin-right: 25px;
+}
+
+/* Additional styles  */
+.background-black{
+    background-color:#222323 !important;
+}
+
+.color-pink{
+    color: #fd309b;
+    font-weight:800;
+    font-size: 14px;
+}
+.try-for-free-btn {
+    height: 2rem;
+    font-weight: 700 !important;
+}
+.custom-gpt-txt-style {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.mt-7{
+    margin-top: 7rem;
+}
+
+.pb-7{
+    padding-bottom: 2.5rem;
+}
+.width-19{
+    width: 19rem;
+}
+
+/* Build your chatbot button style */
+.gredient-btn{
+    background: linear-gradient(to right, #424a63, #e05e4b, #edd36c) !important;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.gredient-btn:hover{
+    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
+    opacity: 1;
+    transition: 0.3s;    
+}
+.h-color-red{
+    color: #E25D4C!important;
+}
+#chatbot-btn-style {    
+    padding: 10px;
+    border-radius: 11px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    max-width: 16rem;
+    
+}
+/* Watch now button style  */
+.custom-block-1{
+    z-index: -1;
+}
+
+.watch-now-style{
+    padding: 11px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 916px) {
+    span.col-md.text-center.btn-label-text-style{
+        color: #71717a;
+        text-align: left !important;
+        margin-left: 2rem;
+     }
+}
+
+.title-txt-style{
+    font-size:1.125rem;
+    line-height:1.5
+}
+
+.align-left-content{
+    left: 4.5rem;
+    position: relative;
+}
+
+.align-right-content{
+    left: 26rem;
+    position: relative;
+    margin-right: 19px;
+}
+
+.pad-2{
+    padding: 2px;
+}
+
+.card.twitter-card-style {
+    background: #18181b;
+    color: white;
+    opacity: 0.9;
+    padding: 10px 12px;
+    border-radius: 12px !important;
+}
+
+
+.free-section-style{
+    min-height: 15rem; 
+    background-color:#18181b;
+    opacity:0.9;
+    border-radius: 10px;
+}
+
+/*(Karan work start)*/
+.cb-font{
+    font-family: Inter var,ui-sans-serif,system-ui;
+}
+.bg-color-black{
+    background-color: #000;
+}
+.bg-with-gradient{
+    background-image: radial-gradient(50% 50% at 50% 50%,#000 10%,#000 20%,rgba(124,58,237,0) 100%);
+    min-height: .15rem;
+    margin:4rem auto;
+}
+.mds-block{
+    margin-bottom: 80px;
+}
+.img-section{
+    margin:.25rem 0;
+    color: #E05D4B;
+}
+.title-section{
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-top: .25rem;
+    font-family: Inter var,ui-sans-serif,system-ui;
+}
+.description-section{
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.video-section{
+    position:relative;
+    margin-top: 120px;
+}
+.video-section .video-svg-outer{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    cursor: pointer;
+}
+.footer-block{
+    width: 100%;
+    margin-top: 40px;
+    padding: 80px 0px;
+}
+.footer-p{
+    color: rgb(161 161 170/1);
+    font-weight: 500;
+}
+.footer-logo-text{
+    font-size: 18px;
+}
+.contact-btn{
+    background-color: #F4F4F5;
+    border:0 none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition-duration: .15s;
+    color: #FFF;
+}
+.contact-btn:hover{
+    background-color: #CECED1;
+    transition-duration: .15s;
+}
+.social-icons{
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    border:solid 1px rgb(39 39 42/1);
+    border-radius: 8px;
+    padding: .75rem;
+}
+.social-icons:hover{
+    background-color:#242426;
+}
+.social-icons svg{
+    color: #CECED1;
+}
+.social-icons:hover > svg{
+    color: #FFF;
+}
+ 
+ 
+.footer-menu-title{
+    color: rgb(250 250 250/1);
+    font-size: .875rem;
+    letter-spacing: 1.4px;
+}
+ 
+.footer-menu ul li{
+    list-style: none;
+}
+.footer-menu ul li a{
+    color:rgb(161 161 170/1);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top:15px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer-menu ul li a:hover{
+    color:rgb(255 255 255/1);
+}
+.copyright-section{
+    background-color: rgb(9 9 11/1);
+}
+.copyright-section p{
+    color:rgb(161 161 170/1);
+    font-size:14px;
+}
+/*(Karan work end)*/
+
+/*(Rimal work start)*/
+.powerful-features-div{
+    background-color: #e4e4e7;
+}
+ 
+.usecases-div{
+    background: radial-gradient(89.72% 84.75% at 49.92% 48.04%, rgba(69, 30, 137, 0.25) 0%, rgba(0, 0, 0, 0.00) 100%);
+    border: 1px solid #292524 !important;
+    border-radius: 1.25rem !important;
+}
+.usecases-title{
+    line-height:2
+}
+.usecases-subtitle{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+
+/*(Rimal work end)*/
+/*.hiw-right-outer{
+    position: relative;
+}
+.hiw-right-outer img{
+    position: absolute;
+    right:-220px;
+}*/
+@media screen and (min-width: 1600px) {
+    .hiw-section{
+        background-image: url("assets/images/HowItWorksBlack.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        
+    }
+    .try-for-free-btn{
+        margin-left: 16px !important;
+    }
+}
+@media (max-width: 768px){
+    .custom-gpt-txt-style{
+        font-size:4rem;
+    }
+    .navbar-nav{
+        padding: 20px 8px;
+    }
+   
+}
+
+/*Accordion CSS start*/
+.accordion{
+    width: 100%;
+}
+.accordion .card-header{
+    background-color: transparent;
+    border:0 none;
+}
+.accordion .card{
+    border:0 none;
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+.btn.collapsed .material-symbols-outlined{
+    display: none;
+}
+.accordion button,
+.accordion button:hover,
+.accordion button:active{
+    color: rgb(0 0 0/1);
+    text-decoration: none !important;
+    padding: 0;
+}
+.hiw-img{
+    margin-left: 100px;
+}
+.hiw-img.inactive{
+    display: none;
+}
+/*Accordion CSS end*/
+

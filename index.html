@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbase | Custom GPT for your data</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/logo.ico">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Material Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header container start's here  -->
+  <header style="height: 4rem;">
+    <!-- Navbar container -->
+    
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/logo.svg" alt="Chatbase Logo" height="35rem" />
+              <span class="text-dark h5 p-0 m-0 ml-1">Chatbase</span>
+            </div>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black" href="#">Affiliates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black" href="#">Pricing</a>
+              </li>
+              
+              <li class="nav-item dropdown mr-4">
+                <a class="nav-link dropdown-toggle  text-dark h6 font-weight-bold text-decoration-none color-black" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Resources
+                </a>
+                <div class="dropdown-menu px-2" style="padding-left: 1.5em !important;" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="dropdown-item row">
+                     <div class="col-md-4 d-flex p-0">
+                      <img src="assets/images/Guide.png" alt="Guide" height="35rem" />
+                        <div>
+                          <a  class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black p-0 h-0" href="#">Guide</a>
+                          <p class="p-0 h-0">Find out everything on how to use chatbase, and unlock its full potential.</p>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="dropdown-item row">
+                    <div class="col-md-4 d-flex p-0">
+                      <img src="assets/images/Blog.png" alt="Guide" height="35rem" />
+                       <div>
+                         <a  class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black p-0 h-0" href="#">Blog</a>
+                         <p class="p-0 h-0">Learn more about chatbase by reading our latest articles.</p>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="dropdown-item row">
+                  <div class="col-md-4 d-flex p-0">
+                    <img src="assets/images/API.png" alt="Guide" height="35rem" />
+                     <div>
+                       <a  class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black p-0 h-0" href="#">API</a>
+                       <p class="p-0 h-0">Explore our API and learn how to integrate chatbase with your app.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="dropdown-item row">
+                <div class="col-md-4 d-flex p-0">
+                  <img src="assets/images/ChangeLog.png" alt="Guide" height="35rem" />
+                   <div>
+                     <a  class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black p-0 h-0" href="#">Changelog</a>
+                     <p class="p-0 h-0">Stay up to date with the latest updates and features.</p>
+                   </div>
+                </div>
+             </div>
+                </div>
+              </li>
+              <li class="nav-item visibility-hidden" style="width: 150px;"></li>
+              <li class="nav-item">
+                <a class="nav-link text-dark h6 font-weight-bold text-decoration-none color-black" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <button type="button"
+              class="try-for-free-btn btn btn-dark background-black rounded d-flex align-items-center justify-content-center gredient-btn">Try
+              for free <span class="material-symbols-outlined">trending_flat</span></button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+  </header>
+  <!-- Header container end's here  -->
+
+  <!-- Main container start's here  -->
+  <main class="position-relative custom-block-1 d-flex align-items-start">
+    <!-- Left column for content -->
+    <div class="col-md-6 d-flex justify-content-center justify-content-md-end col-sm-12">
+      <div class="px-2">
+        <div class="mt-7" style="max-width: 40rem;">
+          <p class="custom-gpt-txt-style">Custom ChatGPT for your website</p>
+          <p class="title-txt-style mt-1 text-left">Build a custom GPT, embed it on your
+            website and let it handle customer support, lead generation, engage with your users, and more.</p>
+          <div class="row d-flex align-items-start m-0 p-0">
+            <div class="d-flex flex-column col-md-5  m-0 p-0">
+              <button type="button" class="btn btn-light  d-flex align-items-center justify-content-center gredient-btn"
+                id="chatbot-btn-style">Build your Chatbot <span
+                  class="material-symbols-outlined">trending_flat</span></button>
+              <span style="color:#71717a" class="col-md text-center btn-label-text-style">No credit card required</span>
+            </div>
+            <div class="d-flex align-items-center watch-now-style col-md-6 col-sm-12">
+              <span class="material-symbols-outlined">
+                play_circle
+              </span>
+              <span class="ml-2">Watch Video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right column -->
+    <div class="col-md-6 mt-4 d-none d-lg-block">
+      <img src="assets/images/dashboard.png" alt="Dashboard Image" class="img-fluid" />
+    </div>
+  </main>
+  <!-- Main container end's here  -->
+
+  <!-- Trusted Business section start's here  -->
+  <section>
+    <div class="container-fluid bg-dark px-1 py-8 pb-7" style="background-color: black !important;">
+      <div class="text-light text-center pt-5 pb-3">Trusted by 5000+ businesses</div>
+      <div class="d-flex flex-wrap justify-content-center align-items-center px-3">
+        <img alt="Opal Company" class="mx-1" loading="lazy" width="130" height="60" decoding="async"
+          src="assets/images/Opal.png">
+        <img alt="Siemens Company" class="mx-1" loading="lazy" width="180" height="60" decoding="async"
+          src="assets/images/Siemens.png">
+        <img alt="Postman Company" class="mx-1" loading="lazy" width="160" height="60" decoding="async"
+          src="assets/images/Postman.png">
+        <img alt="Alpian Company" class="mx-1" loading="lazy" width="160" height="60" decoding="async"
+          src="assets/images/Alpian.png">
+        <img alt="AlBaraka Company" class="mx-1" loading="lazy" width="160" height="60" decoding="async"
+          src="assets/images/AlBaraka.png">
+
+      </div>
+    </div>
+  </section>
+  <!-- Trusted Business section end's here  -->
+
+ <!-- How it works section start's here  -->
+ <section class="mt-7">
+    <div class="d-flex flex-column align-items-start container mb-4">
+      <span class="color-pink h-color-red">HOW IT WORKS</span>
+      <span class="title-txt-style mt-1 text-left font-weight-bold h5">Add your data sources, train the AI, customize it to your liking, and add it to your website.</span>
+    </div>  
+ </section>
+ <section class="hiw-section mb-4">
+  
+    <div class="d-flex flex-column align-items-start container mb-4">
+      <div class="row w-100">
+        <div class="col-md-6 mt-5" >
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link w-100 text-left" data-img="1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <p>
+                      01<span class="title-txt-style mt-1 text-left font-weight-bold h3">  Import your data</span>
+                      <span class="material-symbols-outlined float-right">east</span>
+                    </p>
+                    
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Connect your data sources, upload files, or add a website for crawling, and Chatbase will use all of that data to train your chatbot.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link w-100 text-left collapsed" data-img="2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p>
+                      02<span class="title-txt-style mt-1 text-left font-weight-bold h3">  Customize behavior & appearance</span>
+                      <span class="material-symbols-outlined float-right">east</span>
+                    </p>
+                    
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Make your chatbot look like it's part of your website with custom colors and logos and make it match your brand's personality with custom instructions
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link w-100 text-left collapsed" data-img="3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p>
+                      03<span class="title-txt-style mt-1 text-left font-weight-bold h3">  Embed on your website</span>
+                      <span class="material-symbols-outlined float-right">east</span>
+                    </p>
+                    
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Add a chat widget to any website with a simple embed code.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link w-100 text-left collapsed" data-img="4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    <p>
+                      04<span class="title-txt-style mt-1 text-left font-weight-bold h3">  Integrate with your tools</span>
+                      <span class="material-symbols-outlined float-right">east</span>
+                    </p>
+                    
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  Connect your chatbot to your favorite tools like Slack, WhatsApp Zapier, and more.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="" >
+            <div class="col-md-12 p-8">
+                <div class="row">
+                   <p>01<span class="title-txt-style mt-1 text-left font-weight-bold h3">  Import Your Data</span></p>
+                   <span class="material-symbols-outlined">east</span>
+
+                </div>
+                <div class="col">
+                    <span class="material-symbols-outlined float-right">east</span>
+                </div>
+            </div>
+                  <span class="title-txt-style mt-1 text-left h5">Connect your data sources, upload files, or add a website for crawling, and Chatbase will use all of that data to train your chatbot.</span>
+            </div>
+            <hr/>
+            <div class="col-md-12 pad-2 custom-div">
+              <div class="row">
+                  <div class="col-auto">
+                      <p>02<span class="title-txt-style mt-1 text-left font-weight-bold h4 indented">Customize behavior & appearance</span></p>
+                  </div>
+                  <div class="col">
+                      <span class="material-symbols-outlined float-right icon-hidden">east</span>
+                  </div>
+              </div>
+          </div>                    
+            <hr/>
+              <div class="col-md-12 pad-2 custom-div">
+                <div class="row">
+                  <div class="col-auto">
+                      <p>03<span class="title-txt-style mt-1 text-left font-weight-bold h4 indented">Embed on your website</span></p>
+                  </div>
+                  <div class="col">
+                      <span class="material-symbols-outlined float-right icon-hidden">east</span>
+                  </div>
+              </div>
+            </div>
+            <hr/>
+              <div class="col-md-12 pad-2 custom-div" >
+                <div class="row">
+                  <div class="col-auto">
+                      <p>04<span class="title-txt-style mt-1 text-left font-weight-bold h4 indented">Integrate with your tools</span></p>
+                  </div>
+                  <div class="col">
+                      <span class="material-symbols-outlined float-right  icon-hidden">east</span>
+                  </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-md-6 col-sm-12 justify-content-end d-none d-lg-block hiw-right-outer p-4">
+          <img src="assets/images/1.webp" alt="How it works Image" class="img-fluid w-75 hiw-img hiw-img-1" />
+          <img src="assets/images/2.webp" alt="How it works Image" class="img-fluid w-75 hiw-img hiw-img-2 inactive" />
+          <img src="assets/images/3.webp" alt="How it works Image" class="img-fluid w-75 hiw-img hiw-img-3 inactive" />
+          <img src="assets/images/4.webp" alt="How it works Image" class="img-fluid w-75 hiw-img hiw-img-4 inactive" />
+        </div>        
+      </div>
+ </section>
+ <!-- How it works section end's here  -->
+
+ <!-- Powerful Features section start's here  -->
+<section class="mt-7">
+  <div class="mt-5 container">
+    <div class="d-flex flex-column align-items-start p-0 mb-3">
+      <span class="color-pink h-color-red">POWERFUL FEATURES</span>
+      <span class="title-txt-style mt-1 text-left font-weight-bold h5">Everything you need for your no-code AI chatbot.</span>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-12 mb-4">
+          <div class="col-12 border rounded p-0 h-100">
+            <div class="powerful-features-div">
+              <img alt="Trustworthy, Accurate Answers"  class="img-fluid px-3 pt-4"src="assets/images/powerful_features1.webp">
+            </div>
+            <div class="d-flex flex-column align-items-start bg-white p-4">
+              <h5 class="title-txt-style mt-1 text-left font-weight-bold">Trustworthy, Accurate Answers</h5>
+              <p class="title-txt-style mt-1 text-left font-weight-light">With features like "Revise answers" and "Confidence score" you can
+            be sure your chatbot is giving the right answers.</p>
+            </div>
+          </div>     
+      </div>
+      <div class="col-lg-4 col-12 mb-4">
+          <div class="col-12 border rounded p-0 h-100">
+            <div class="powerful-features-div">
+              <img alt="Lead Generation Engine" class="img-fluid px-3 pt-4" src="assets/images/powerful_features2.webp">
+            </div>
+            <div class="z-10 flex flex-col items-start gap-1 bg-white p-4">
+              <h5 class="title-txt-style mt-1 text-left font-weight-bold">Lead Generation Engine</h5>
+              <p class="title-txt-style mt-1 text-left font-weight-light">Collect leads and gather your customer's data, all while providing a
+              personalized experience.</p>
+            </div>
+        </div>
+        
+      </div>
+      <div class="col-lg-4 col-12 mb-4">
+          <div class="col-12 border rounded p-0 h-100">
+            <div class="powerful-features-div">
+            <img alt="Advanced Analytics" class="img-fluid px-3 pt-4" src="assets/images/powerful_features3.webp"></div>
+            <div class="z-10 flex flex-col items-start gap-1 bg-white p-4">
+              <h5 class="title-txt-style mt-1 text-left font-weight-bold">Advanced Analytics</h5>
+              <p class="title-txt-style mt-1 text-left font-weight-light">Get insights into your chatbot’s interactions with your customers
+            and use them to improve its performance.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Powerful Features section end's here  -->
+
+<!-- Seperator start's here  -->
+<section>
+  <div class="col-2 bg-with-gradient"></div>
+</section>
+<!-- Seperator end's here -->
+
+<!-- Multiple Data Sources start's here  -->
+<section>
+  <div class="d-flex flex-column align-items-start container">
+    <section class="change-bg"></section>
+    <div class="row">
+
+      <!-- Block 1 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Multiple Data Sources</h5>
+        </div>
+        <div class="col-12 description-section">
+          Import data from multiple sources to train your chatbot.
+        </div>
+      </div>
+      <!-- Block 1 End -->
+
+      <!-- Block 2 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Customizations</h5>
+        </div>
+        <div class="col-12 description-section">
+          Customize your chatbot’s look and feel to match your brand’s style and website design.
+        </div>
+      </div>
+      <!-- Block 2 End -->
+
+      <!-- Block 3 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Whitelabel</h5>
+        </div>
+        <div class="col-12 description-section">
+          Remove Chatbase branding and use a custom domain.
+        </div>
+      </div>
+      <!-- Block 3 End -->
+
+      <!-- Block 4 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Privacy & Security
+          </h5>
+        </div>
+        <div class="col-12 description-section">
+          Privacy & Security
+
+        </div>
+      </div>
+      <!-- Block 4 End -->
+
+      <!-- Block 5 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Auto-Retrain</h5>
+        </div>
+        <div class="col-12 description-section">
+          Set your chatbot to retrain automatically and always be synced with your data.
+        </div>
+      </div>
+      <!-- Block 5 End -->
+
+      <!-- Block 6 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Integrations</h5>
+        </div>
+        <div class="col-12 description-section">
+          Connect your chatbot to your favorite tools like Slack, WhatsApp Zapier, and more.
+        </div>
+      </div>
+      <!-- Block 6 End -->
+
+      <!-- Block 7 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>Powerful AI Models</h5>
+        </div>
+        <div class="col-12 description-section">
+          Choose from a variety of AI models, including GPT-3.5-turbo and GPT-4.
+        </div>
+      </div>
+      <!-- Block 7 End -->
+
+      <!-- Block 8 Start -->
+      <div class="col-6 col-md-3 mds-block">
+        <div class="col-12 img-section">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" width="30" class="text-zinc-900"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"></path></svg>
+        </div>
+        <div class="col-12 title-section">
+          <h5>80+ Languanges</h5>
+        </div>
+        <div class="col-12 description-section">
+          Reach your customers in their native language even if your data is in a different language.
+        </div>
+      </div>
+      <!-- Block 8 End -->
+
+    </div>
+
+  </div>
+</section>
+<!-- Multiple Data Sources end's here -->
+
+<!-- Video section start's here  -->
+<section class="change-bg">
+  <div class="d-flex flex-column align-items-start container">
+    <div class="col-12 video-section">
+      <video class="w-100" muted="" controls="" loop="">
+        <source src="https://backend.chatbase.co/storage/v1/object/public/chatbase/studio-ai-landing.mp4">
+      </video>
+      <div class="video-svg-outer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute ml-1 h-10 w-10 text-white md:h-14 md:w-14"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>        </div>
+    </div>
+  </div>
+</section>
+ <!-- Video section end's here  -->
+
+ <!-- Usecases section start's here  -->
+ <section class="change-bg">
+  <div class="mt-5 container">
+    <div class="d-flex flex-column align-items-start p-0 mb-3">
+      <span class="color-pink h-color-red">USECASES</span>
+      <span class="title-txt-style mt-1 text-left font-weight-bold h5 text-light">Here are some of the ways you can use Chatbase.</span>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-12 mb-5 text-white pr-lg-4">
+          <div class="col-12 px-4 pt-3 h-100 usecases-div">
+            <h4 class="mt-1 text-left font-weight-bold usecases-title">Customer Support</h4>
+            <p class="mt-1 text-left mb-4 usecases-subtitle">Experience swift query resolutions, available 24/7, with
+              personalized assistance tailored to your customers' needs.</p>
+              <img alt="Customer Support" class="img-fluid" src="assets/images/usecases1.webp">
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 mb-5 text-white pl-lg-4">
+          <div class="col-12 px-4 pt-3 h-100 usecases-div">
+          <h4 class="mt-1 text-left font-weight-bold usecases-title">Lead Generation</h4>
+          <p class="mt-1 text-left mb-4 usecases-subtitle">Set your chatbot to collect leads and qualify them, all while
+            providing a personalized experience to your customers.</p>
+            <img alt="Lead Generation" class="img-fluid" src="assets/images/usecases2.webp">
+        </div>
+        </div>
+        <div class="col-lg-6 col-12 mb-5 text-white pr-lg-4">
+          <div class="col-12 px-4 pt-3 h-100 usecases-div">
+          <h4 class="mt-1 text-left font-weight-bold usecases-title">AI Personas to Engage Your Users</h4>
+          <p class="mt-1 text-left mb-4 usecases-subtitle">Create AI personas about any topic and have them engage with your
+            users and provide them with a personalized experience.</p>
+            <img alt="AI Personas to Engage Your Users" class="img-fluid" src="assets/images/usecases3.webp">
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 mb-5 text-white pl-lg-4">
+          <div class="col-12 px-4 pt-3 h-100 usecases-div">
+          <h4 class="mt-1 text-left font-weight-bold usecases-title">Multi-platform Chatbots</h4>
+          <p class="mt-1 text-left mb-4 ">Add AI chatbots to your website, mobile app, or any other platform
+            with a simple embed code or with our API.</p>
+            <img alt="Multi-platform Chatbots" class="img-fluid" src="assets/images/usecases4.webp">
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- Usecases section end's here  -->
+
+ <!-- Integration section start's here  -->
+ <section>
+  <div class="mt-7">
+    <div class="d-flex flex-column align-items-start container mb-4">
+      <span class="color-pink h-color-red">INTEGRATIONS</span>
+      <span class="title-txt-style mt-1 text-left font-weight-bold h5" style="color: white;">Ingest data from multiple sources, train your chatbot, and let your users interact with it wherever they are.</span>
+      <img src="assets/images/integrations.png" alt="Integration Image" class="img-fluid mt-3" />
+
+    </div>
+  </div>
+ </section>
+ <!-- Integration section end's here  -->
+
+
+  <!-- what people are saying section start's here  -->
+  <section class="mt-7 change-bg">
+    <div class="mt-7" style="min-height: 76.1vh;">
+      <div class="d-flex flex-column align-items-start container mb-4">
+        <span class="color-pink h-color-red">WHAT PEOPLE ARE SAYING</span>
+        <span class="title-txt-style mt-1 text-left font-weight-bold h5" style="color: white;">Chatbase is the easiest way to create a chatbot for your website. Don't take our word for it! Here's what people are saying.</span>
+
+        <div class="row w-100 mt-3 p-1">
+            <div class="col-md-3 mb-1">
+              <div class="card twitter-card-style" >
+                <div class="card-body">
+                  <img src="assets/images/twitter.svg" alt="Integration Image" class="img-fluid float-right mb-2" height="1.5rem" />
+                  <blockquote class="text-zinc-50">
+                    <p>“This is awesome”</p>
+                </blockquote>
+                  <div class="font-weight-bold text-zinc-50">Jacob Andreou</div>
+                  <div>SVP @Snap</div>
+                </div>      
+                </div>
+              </div>
+            <div class="col-md-6 mb-1">
+              <div class="card  twitter-card-style d-none d-lg-block"   style="padding: 40px;">
+                <div class="card-body">
+                  <img src="assets/images/twitter.svg" alt="Integration Image" class="img-fluid float-right mb-2" height="1.5rem" />
+                  <blockquote class="text-zinc-50">
+                    <p>“For anyone on the fence - in the 2 hours since this tweet I've tested, set up and gone live on three separate websites with Chatbase. Still need to do some light tweaking of the base prompt but very happy with the results.”</p>
+                </blockquote>
+                  <div class="font-weight-bold text-zinc-50">Ian Whiscombe</div>
+                  <div >Founder @StockBuddy</div>
+                </div>      
+                </div>
+                <div class="row w-100 mt-2 ">
+                  <div class="col-md-6  mb-1">
+                    <div class="card twitter-card-style">
+                      <div class="card-body">
+                        <blockquote>
+                          <p>“Another overpowered project built with the 🪄 OP stack”</p>
+                      </blockquote>
+                        <div class="font-weight-bold text-zinc-50">Greg Kogan</div>
+                        <div >VP @pinecone</div>
+                      </div>      
+                      </div>
+                  </div>
+                  <div class="col-md-6  mb-1">
+                    <div class="card twitter-card-style">
+                      <div class="card-body">
+                        <blockquote>
+                          <p>“This is awesome, thanks for building it!”</p>
+                      </blockquote>
+                        <div class="font-weight-bold text-zinc-50">Logan.GPT</div>
+                        <div >Dev Rel @OpenAI</div>
+                      </div>      
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3  mb-1">
+              <div class="card twitter-card-style">
+                <div class="card-body">
+                  <blockquote>
+                    <p>“Website embed works like a charm even with non-English content!”</p>
+                </blockquote>
+                  <div class="font-weight-bold text-zinc-50">Hannah K</div>
+                  <div >Designer @Nortal</div>
+                </div>      
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- what people are saying section  end's here  -->
+
+  <!-- Try for free section start's here  -->
+  <section class="change-bg">
+     <div class="container d-flex flex-column justify-content-center align-items-center free-section-style ">
+        <h1 class="text-white font-weight-bold">Join the future of AI chatbots today</h1>
+          <button type="button" class="btn btn-light  d-flex align-items-center justify-content-center gredient-btn"
+            id="chatbot-btn-style">Try for free <span
+              class="material-symbols-outlined">trending_flat</span></button>
+     </div>
+  </section>
+  <!-- Try for free section end's here  -->
+ 
+  <!-- Footer section start's here -->
+  <section class="change-bg">
+    <div class="container">
+      <div class="row footer-block">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-12">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none" class="h-8 w-8">
+                <path d="M35.6817 9.33204V28.057C35.6817 32.7383 31.8877 36.5323 27.2064 36.5323H8.47215C3.79401 36.5323 0 32.7383 0 28.0601V9.32894C0 4.6477 3.79711 0.850586 8.47835 0.850586H27.2002C31.8846 0.850586 35.6817 4.6477 35.6817 9.33204Z" fill="#FAFAFA"></path>
+                <path d="M27.5818 21.5886C27.3894 24.1417 25.8135 26.4994 23.6451 27.8582C22.8509 28.3545 21.9854 28.7237 21.0857 28.9719L20.6328 23.726C21.3246 23.2142 21.821 22.4107 21.8706 21.5514C23.7754 21.5638 25.6801 21.5762 27.5849 21.5886H27.5818Z" fill="#09090B"></path>
+                <path d="M27.5876 16.0858C25.6797 16.0858 23.7781 16.0858 21.8702 16.0858C21.8857 15.1397 21.3863 14.2183 20.6324 13.6444C19.8786 13.0705 18.8983 12.8347 17.9552 12.9061C17.5457 12.9371 17.1362 13.0271 16.7516 13.176L13.8789 8.85458C15.5851 8.13797 17.5147 7.9053 19.3698 8.08523C21.2777 8.26826 23.1825 8.8825 24.656 10.1048C26.4119 11.5597 27.4232 13.8057 27.5845 16.0827L27.5876 16.0858Z" fill="#09090B"></path>
+                <path d="M21.0827 28.9718C19.5192 29.3968 17.8502 29.4589 16.2495 29.1828C14.4099 28.8663 12.623 28.1063 11.2456 26.8437C7.87038 23.7384 7.36162 18.0706 8.98408 13.9664C9.55178 12.527 10.4359 11.2085 11.6303 10.2127C12.3066 9.64502 13.0697 9.1983 13.8794 8.85706L16.752 13.1784C16.3891 13.318 16.0509 13.5104 15.7438 13.7492C14.292 14.9033 13.9352 16.96 13.9538 18.8183C13.9693 20.6051 14.3385 22.5813 15.7624 23.6608C16.4046 24.1479 17.2049 24.3992 18.0115 24.4426C18.9019 24.4922 19.8232 24.2906 20.5553 23.7787C20.5802 23.7601 20.6081 23.7415 20.6329 23.7229L21.0858 28.9687L21.0827 28.9718Z" fill="#09090B"></path>
+              </svg>
+              <span class="text-white cb-font footer-logo-text">Chatbase</span>
+              <p class="footer-p mt-3 cb-font">Custom ChatGPT for your website</p>
+            </div>
+            <div class="col-12 mt-4 mb-5">
+              <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+                <a class="contents" target="_blank" href="#">
+                  <button class="contact-btn cb-font gredient-btn">Contact</button>
+                </a>
+                <a class="social-icons ml-2" href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6"><path fill-rule="evenodd" clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"></path></svg>
+                </a>
+                <a class="social-icons ml-2" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram size-6"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-4 mb-5 col-md-4 footer-menu">
+              <h5 class="footer-menu-title cb-font">Product</h5>
+              <ul class="p-0">
+                <li><a href="#" class="cb-font">Pricing</a></li>
+                <li><a href="#" class="cb-font">Security</a></li>
+                <li><a href="#" class="cb-font">Affiliates</a></li>
+              </ul>
+            </div>
+            <div class="col-4 mb-5 col-md-4 footer-menu">
+              <h5 class="footer-menu-title cb-font">Resources</h5>
+              <ul class="p-0">
+                <li><a href="#" class="cb-font">API</a></li>
+                <li><a href="#" class="cb-font">Contact Us</a></li>
+                <li><a href="#" class="cb-font">Guide</a></li>
+                <li><a href="#" class="cb-font">Block</a></li>
+              </ul>
+            </div>
+            <div class="col-4 mb-5 col-md-4 footer-menu">
+              <h5 class="footer-menu-title cb-font">Company</h5>
+              <ul class="p-0">
+                <li><a href="#" class="cb-font">Privacy Policy</a></li>
+                <li><a href="#" class="cb-font">Terms of Service</a></li>
+                <li><a href="#" class="cb-font">DPA</a></li>
+                <li><a href="#" class="cb-font">Cookie Policy</a></li>
+                <li><a href="#" class="cb-font">Trust Center</a></li>
+                <li><a href="#" class="cb-font">Cookie Preferences</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="change-bg copyright-section">
+    <div class="d-flex flex-column align-items-start container">
+      <div class="col-12 py-3">
+        <p class="cb-font">© 2024 Chatbase. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer section end's here -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>

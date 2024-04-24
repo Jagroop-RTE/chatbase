@@ -1,0 +1,37 @@
+/* Help Box Style */
+
+.bg-btn{
+    background: linear-gradient(to right, #424a63, #e05e4b, #edd36c) !important;
+    opacity: 0.8;
+    transition: 0.3s;
+    border: none !important;
+    padding: 0.6rem 4rem !important;
+}
+
+.bg-btn{
+    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
+    opacity: 1;
+    transition: 0.3s; 
+    border: none !important;
+    padding: 0.6rem 4rem !important;
+}
+.label-style{
+    font-size: 15px;
+}
+.help-box-style{
+    border: 1px solid #e4e3e3;
+    padding: 40px;
+    border-radius: 10px;
+    width: 55%;
+}
+
+input#select-tags-ts-control {
+    font-size: 15px;
+}
+
+/* Upload File CSS  */
+
+.input-file { position: relative;}
+.input-file .input-group-addon { border: 0px; padding: 0px; }
+.input-file .input-group-addon .btn { border-radius: 0 4px 4px 0;background: #424a63;border: none; }
+.input-file .input-group-addon input { cursor: pointer; position:absolute; width: 72px; z-index:2;top:0;right:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0; background-color:transparent; color:transparent; }
