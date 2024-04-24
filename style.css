@@ -212,7 +212,7 @@ body{
     padding: 10px 25px;
     font-weight: 500;
     transition-duration: .15s;
-    /* color: #FFF; */
+    color: #FFF;
 }
 .contact-btn:hover{
     background-color: #CECED1;
@@ -343,20 +343,3 @@ body{
 }
 /*Accordion CSS end*/
 
-.dropdown-menu.show {
-    display: contents !important;
-    transition: ease !important;
-}
-.dropdown-item{
-    color: #9898a0 !important;
-    padding: 0.25rem 1rem !important;
-}
-.dropdown-btn{
-    background-color: #000 !important;
-    border: 0 !important;
-    border-bottom: 0.5px solid #27272a !important;
-}
-.dropdown-btn:focus {
-    box-shadow: none !important;
-    /* border: 0 !important; */
-}
