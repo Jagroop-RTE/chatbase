@@ -360,3 +360,23 @@ body{
     box-shadow: none !important;
     /* border: 0 !important; */
 }
+.guide-text-head{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+}
+.guide-text-style{
+    max-width: 20rem;
+}
+.guide-section-border-top{
+    border-radius: 1.2rem 1.2rem 0 0 !important;
+}
+.guide-section-border-bottom{
+    border-radius: 0 0 1.2rem 1.2rem !important;
+}
+.guide-section-border{
+    border-radius: 1.2rem !important;
+}
+.guide-section-btn-border{
+    border-radius: .7rem !important;
+}
