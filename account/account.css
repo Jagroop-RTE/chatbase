@@ -1,0 +1,53 @@
+.block-style{
+    border: 1px solid #e4e3e3;
+    padding: 13px 40px;
+    border-radius: 10px;
+}
+@media screen and (min-width: 1600px) {
+    .block-style{
+        width: 33rem !important;
+    }
+}
+
+.title-txt-style{
+    font-size:1.125rem;
+    line-height:1.5
+}
+
+
+button.btn.btn-primary.mb-2.update-btn-style {
+    background: linear-gradient(to right, #4e5771, #e05a45, #ebd166) !important;
+    border: none;
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid rgb(220 220 220);
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.color-red{
+    color:red;
+}
+
+.danger-zone{
+    background-color: white;
+    font-size: 16px;
+    font-weight: 400;
+    color:red;
+}
