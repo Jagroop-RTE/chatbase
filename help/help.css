@@ -22,7 +22,15 @@
     border: 1px solid #e4e3e3;
     padding: 40px;
     border-radius: 10px;
-    width: 55%;
+}
+
+@media screen and (min-width: 1600px) {
+    .help-box-style{
+        border: 1px solid #e4e3e3;
+        padding: 40px;
+        border-radius: 10px;
+        width: 55%;
+    }
 }
 
 input#select-tags-ts-control {

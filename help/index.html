@@ -24,14 +24,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.0.0-rc.4/dist/css/tom-select.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.0.0-rc.4/dist/js/tom-select.complete.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <!-- bootstrap-select JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 
 </head>
 
@@ -70,15 +62,26 @@
                       </div>
                     <div class="row">
                         <div class="col-md-6">
-                          <label for="exampleDropdown">Select an option:</label>
+                          <label for="general-dnquiries-dropdown" class="font-weight-bold label-style ml-1">General Inquiries</label>
                           <select class="selectpicker form-control" id="exampleDropdown" data-live-search="true">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                            <option>Option 4</option>
-                            <option>Option 5</option>
+                            <option>Billing</option>
+                            <option>Account Management</option>
+                            <option>Feature Request</option>
+                            <option>Bug/Issue</option>
+                            <option>Affiliate Programs</option>
+                            <option>Partnership</option>
+                            <option>General Inquiries</option>
                           </select>
                         </div>
+                        <div class="col-md-6">
+                            <label for="selected-severity-dropdown" class="font-weight-bold label-style ml-1">Selected Severity</label>
+                            <select class="selectpicker form-control" id="exampleDropdown" data-live-search="true">
+                                <option>Low</option>
+                                <option>Normal</option>
+                                <option>High</option>
+                                <option>Urgent</option>
+                            </select>
+                          </div>
                     </div>
                       <div class="form-group">
                         <label for="subject" class="font-weight-bold label-style ml-1">Subject</label>
@@ -142,7 +145,9 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <!-- <script src="signup.js"></script> -->
+
             <script>
+                  
                 new TomSelect("#select-tags", {
                     plugins: ['remove_button'],
                     create: true,
