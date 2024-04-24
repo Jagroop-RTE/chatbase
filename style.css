@@ -343,20 +343,20 @@ body{
 }
 /*Accordion CSS end*/
 
-.dropdown-menu.show {
+.footer-dropdown-menu.show {
     display: contents !important;
     transition: ease !important;
 }
-.dropdown-item{
+.footer-dropdown-item{
     color: #9898a0 !important;
     padding: 0.25rem 1rem !important;
 }
-.dropdown-btn{
+.footer-dropdown-btn{
     background-color: #000 !important;
     border: 0 !important;
     border-bottom: 0.5px solid #27272a !important;
 }
-.dropdown-btn:focus {
+.footer-dropdown-btn:focus {
     box-shadow: none !important;
     /* border: 0 !important; */
 }
